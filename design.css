@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4c83ff, #52e5e7);
+}
+.main h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+.container{
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.game{
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 1.5vh;
+}
+.game button{
+    width: 14vh;
+    height: 13vh;
+    border-radius: 1rem;
+    border: none;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    color: #b0413e;
+    font-size: 9vh;
+    cursor: pointer;
+}
+.winning-x {
+    background-color: lightcoral; /* Highlight for X */
+    color: white; /* Text color for X */
+    border: 2px solid darkred; /* Optional bold border */
+}
+
+.winning-O {
+    background-color: black; /* Highlight for O */
+    color: white; /* Text color for O */
+    border: 2px solid navy; /* Optional bold border */
+}
+
+#reset-btn{
+    /* padding: 13px 18px; */
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #52e5e7, #4c83ff);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+}
+#reset-btn:hover{
+    font-size: 1.2rem;
+}
+.msg{
+    height: 18vh;
+    text-align: center;
+}
+#win{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(229, 208, 208);
+}
+.msg button{
+    padding: 0.5rem;
+    border-radius: 1vh;
+    background-color: #52e5e7;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+}
+.msg button:hover{
+    background: none;
+    color: #fff;
+    border: 1px solid black;
+}
+.hide{
+    display: none;
+}
